@@ -1,0 +1,45 @@
+strict digraph {
+  doesCommunityExist [color=yellow]
+  constructor
+  initialize
+  __ERC1155_init
+  __Ownable_init
+  __Pausable_init
+  __ERC1155Supply_init
+  _pause
+  setURI
+  _setURI
+  setLatestUnusedTokenId
+  setCommunityRegistryAddress
+  registerBySig
+  _register [color=gray]
+  RegisteredKudos
+  claimBySig
+  _claim [color=gray]
+  _mint
+  addAllowlistedAddressesBySig
+  _addAllowlistedAddresses [color=gray]
+  push
+  getAllowlistedContributors [color=yellow]
+  getKudosMetadata [color=yellow]
+  pause
+  unpause
+  _unpause
+  convertStringArraytoByte32 [color=gray]
+  compareStringsbyBytes [color=green]
+  initialize -> __ERC1155_init
+  initialize -> __Ownable_init
+  initialize -> __Pausable_init
+  initialize -> __ERC1155Supply_init
+  initialize -> _pause
+  setURI -> _setURI
+  registerBySig -> _register
+  _register -> RegisteredKudos
+  claimBySig -> _claim
+  _claim -> _mint
+  addAllowlistedAddressesBySig -> _addAllowlistedAddresses
+  _addAllowlistedAddresses -> push
+  pause -> _pause
+  unpause -> _unpause
+}
+
